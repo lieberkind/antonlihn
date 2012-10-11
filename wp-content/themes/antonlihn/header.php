@@ -49,7 +49,17 @@
 	<div class="container">
 	
 		<header class="page-header">
+			<h1 class="page-logo">Anton Lihn</h1>
+			<p class="phone-number">50 57 45 33</p>
 			
+			<nav class="primary-navigation">
+				<ul class="navigation-menu">
+					<li><a href="#">Lydklip</a></li>
+					<li><a href="#">Udtalelser</a></li>
+					<li><a href="#">Videoer</a></li>
+					<li><a href="#">Sider</a></li>
+				</ul>
+			</nav>
 		</header> <!-- .page-header -->
 		
 		<section class="content" role="main">
