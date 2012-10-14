@@ -1,12 +1,12 @@
 # antonlihn.dk
 
-Dette er, tæmmelig sikkert ufuldstændig, dokumentation for brug af antonlihn temaet til WordPress. Temaet er ultra lightweight og supporterer ikke posts eller widgets men kun pages og en enkelt menu.
+Dette er, temmelig sikkert ufuldstændig, dokumentation for brug af antonlihn temaet til WordPress. Temaet er ultra lightweight og supporterer ikke posts eller widgets men kun pages og en enkelt menu.
 
 ## Sider
 Der er et par enkelte finurligheder ved brug af siderne som lige bør have en kort forklaring tilknyttet.
 
 ### Forsiden
-På forsiden er det muligt at vælge et billede som bliver vist. Dette gøres i "Page Thumbnail"-boksen. Billedet skal have dimensionerne `800px x 600px`.
+På forsiden er det muligt at vælge et billede som bliver vist som baggrund. Dette gøres i "Page Thumbnail"-boksen. Billedet skal have det bizzare format `780px x 585px`.
 
 ### Alle de andre sider…
 
