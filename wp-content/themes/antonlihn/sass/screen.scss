@@ -25,8 +25,23 @@ body {
 
 .content {
 
-  iframe, object, embed {
-    //max-width: 718px !important;
+  img {
+    border: 2px solid #ccc;
+  }
+
+  img.alignleft {
+    float: left;
+    margin: 0 20px 20px 0;
+  }
+
+  img.alignright {
+    float: right;
+    margin: 0 0 20px 20px;
+  }
+
+  img.aligncenter {
+    display: block;
+    margin: 0 auto;
   }
 
   a {
