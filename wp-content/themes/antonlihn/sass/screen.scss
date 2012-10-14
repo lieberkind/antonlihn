@@ -10,15 +10,98 @@
 // Import the non-default scaffolding module.
 @import "blueprint/scaffolding";
 
-// Import the border-radius mixin
+// Import the necessary CSS3 properties
 @import "compass/css3/border-radius";
 @import "compass/css3/box-sizing";
+@import "compass/css3/transition";
 
 body {
   //background-image: url('../img/bgnoise.png');
   background: #eee;
   font-family: "Helvetica Neue", "Helvetica", "Arial", serif;
   font-size: 16px;
+  font-weight: 300;
+}
+
+.content {
+
+  iframe, object, embed {
+    //max-width: 718px !important;
+  }
+
+  a {
+    color: #666;
+    &:hover { color: #999; }
+  }
+
+  blockquote {
+    background: #f8f8f8;
+    border-left: 3px solid #ccc;
+    font-style: italic;
+    margin-bottom: 1.1em;
+    padding: 10px 0 10px 20px;
+
+    p { margin: 0; }
+  }
+
+  p, ul {
+    line-height: 1.5em;
+    margin-bottom: 1.1em;
+  }
+
+  ul {
+    list-style-position: inside;
+    padding-left: 2em;
+    text-indent: -1em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    //margin-top: 1em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 0.1em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.1em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  h5 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.1em;
+  }
+
+  h6 {
+    color: #555;
+    font-size: 0.9em;
+    margin-bottom: 0.1em;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
+.page-content {
+  @include border-radius(2px);
+  @include box-sizing(border-box);
+  @include column(10, true);
+  
+  background: #fff;
+  border: 1px solid #999;
+  padding: 30px;
 }
 
 .container {
@@ -33,7 +116,16 @@ body {
 
 .page-logo {
   @include column(4);
+  font-family: "Georgia", serif;
   font-size: 3em;
+
+  a {
+    @include single-transition(color, 0.1s, ease-in-out);
+    color: #000;
+    text-decoration: none;
+
+    &:hover { color: #555; }
+  }
 }
 
 .phone-number {
@@ -41,8 +133,9 @@ body {
   text-align: right;
 }
 
-.section {
+.content {
   @include column(10, true);
+  margin-bottom: 10px;
 }
 
 .primary-navigation {
@@ -71,10 +164,10 @@ body {
         font-size: 0.8em;
         padding: 10px 15px;
         text-decoration: none;
+      }
 
-        &:hover {
-          @include background(linear-gradient(top, #444, #111));
-        }
+      &.current-menu-item a, a:hover {
+        @include background(linear-gradient(top, #444, #111));
       }
     }
   }
@@ -106,6 +199,11 @@ body {
   top: 20px;
 }
 
+.page-footer {
+  color: #999;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+}
 
 
 

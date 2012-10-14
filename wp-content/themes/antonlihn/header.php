@@ -49,17 +49,19 @@
 	<div class="container">
 	
 		<header class="page-header">
-			<h1 class="page-logo">Anton Lihn</h1>
+			<h1 class="page-logo"><a href="<?= home_url('/'); ?>">Anton Lihn</a></h1>
 			<p class="phone-number">50 57 45 33</p>
-			
-			<nav class="primary-navigation">
-				<ul class="navigation-menu">
-					<li><a href="#">Lydklip</a></li>
-					<li><a href="#">Udtalelser</a></li>
-					<li><a href="#">Videoer</a></li>
-					<li><a href="#">Sider</a></li>
-				</ul>
-			</nav>
+
+			<?php 
+				// Get primary navigation
+				wp_nav_menu(array(
+					'theme_location' 	=> 'primary-navigation',
+					'container' 			=> 'nav',
+					'container_class'	=> 'primary-navigation',
+					'menu_class' 			=> 'navigation-menu'
+				));
+			?>
 		</header> <!-- .page-header -->
 		
 		<section class="content" role="main">
+			
