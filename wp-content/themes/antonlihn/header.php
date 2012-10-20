@@ -6,6 +6,9 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
+
+		<!-- If ie8- create html5 elements -->
+		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<meta charset="utf-8">
 
 		<!-- Use the .htaccess and remove these lines to avoid edge case issues.
