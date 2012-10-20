@@ -272,7 +272,6 @@ body {
         text-decoration: none; }
       /* line 197, ../sass/screen.scss */
       .primary-navigation .navigation-menu li.current-menu-item a, .primary-navigation .navigation-menu li a:hover {
-        background: #444;
         background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444444), color-stop(100%, #111111));
         background: -webkit-linear-gradient(top, #444444, #111111);
         background: -moz-linear-gradient(top, #444444, #111111);
@@ -317,7 +316,7 @@ body {
   float: left;
   margin-right: 0;
   width: 388px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background: url("../img/transparent.png");
   color: #fff;
   font-size: 0.8em;
   line-height: 1.5em;
@@ -329,18 +328,18 @@ body {
   * html .home-text {
     overflow-x: hidden; }
 
-/* line 236, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .home-text.left {
   left: 20px;
   right: initial; }
 
-/* line 241, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .home-text.full {
   left: 20px;
   right: initial;
-  width: 756px; }
+  width: 960px; }
 
-/* line 247, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .page-footer {
   color: #999;
   font-size: 0.8em;
